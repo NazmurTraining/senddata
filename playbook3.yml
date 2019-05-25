@@ -1,0 +1,10 @@
+---
+   - hosts: webservers
+     tasks:
+     - command:
+          mkdir /tmp/"{{ item }}"
+       with_items:
+       - playbook1
+       - playbook2
+       - playbook3
+       
